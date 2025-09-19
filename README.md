@@ -1,33 +1,32 @@
 # AI-tooling-demo
-# # Tilted-Scales Puzzle Generator
-# 
-# Procedural generator for “balanced vs. tipped scale” logic puzzles with **batched** LLM explanations.  
-# Single entry point: `generate.py`.
-# 
-# ---
-# 
-# ## What this does
-# 
-# - **Generates** a JSON array of practice puzzles for two difficulties:
-#   - **easy** — proportional or equal-k weighted balances; clean inequality.
-#   - **difficult** — equal-k weighted balances; inequalities may include the **same extra shape on both sides** plus fixed weights.
-# - **Batches one LLM call** (Claude CLI) for all items to produce, per item:
-#   - `explanation` — **≤ 2 short sentences**, plain shape/weight wording.
-#   - `reasoned_answer` — the **filled inequality string** the LLM derives **on its own** (no spaces).
-# 
-# The output is **UI-ready**: the **top (balanced)** scale comes from `equality`, the **bottom (tipped)** scale from `inequality` + `ineq_template`, and `answer` holds the ground-truth variable order for the two blanks.
-# 
-# ---
-# 
-# ## Quick start
-# 
-# ```bash
-# # Create 200 easy puzzles
-# python generate.py 200 easy data/easy.json
-# 
-# # Create 200 difficult puzzles
-# python generate.py 200 difficult data/difficult.json
-# ```
+# Tilted-Scales Puzzle Generator
+ 
+Procedural generator for “balanced vs. tipped scale” logic puzzles with **batched** LLM explanations.  
+Single entry point: `generate.py`.
+ 
+
+ 
+## What this does
+ 
+- **Generates** a JSON array of practice puzzles for two difficulties:
+- **easy** — proportional or equal-k weighted balances; clean inequality.
+- **difficult** — equal-k weighted balances; inequalities may include the **same extra shape on both sides** plus fixed weights.
+- **Batches one LLM call** (Claude CLI) for all items to produce, per item:
+- `explanation` — **≤ 2 short sentences**, plain shape/weight wording.
+- `reasoned_answer` — the **filled inequality string** the LLM derives **on its own** (no spaces).
+ 
+The output is **UI-ready**: the **top (balanced)** scale comes from `equality`, the **bottom (tipped)** scale from `inequality` + `ineq_template`, and `answer` holds the ground-truth variable order for the two blanks.
+ 
+
+ 
+## Quick start
+ 
+```bash
+Create 200 easy puzzles
+python generate.py 200 easy data/easy.json
+Create 200 difficult puzzles
+python generate.py 200 difficult data/difficult.json
+```
 # 
 # **CLI**
 # 
