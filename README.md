@@ -102,12 +102,12 @@ Each element of the output array:
 }
 
 ```
-- equality (top scale): 2*s = 3*t
-- inequality (tipped scale): s>t
-- inequality template: "_>_"
-- answer: "s" (left), "t" (right) (the array ordering fills the template with the correct values from left to right)
-- LLM explanation: "It takes fewer squares than triangles to balance, so s>t. So s>t."
-- reasoned_answer: "s>t" (we can check if it matches with the correct inequality var for validation)
+- equality (top scale): `2*s = 3*t`
+- inequality (tipped scale): `s>t`
+- inequality template: `_>_`
+- answer: `s (left), t (right) (the array ordering fills the template with the correct values from left to right)`
+- LLM explanation: `It takes fewer squares than triangles to balance, so s>t. So s>t.`
+- reasoned_answer: `s>t (we can check if it matches with the correct inequality var for validation)`
 
 ## DIFFICULT PUZZLE EXAMPLE 
 
@@ -130,7 +130,7 @@ Each element of the output array:
   }
 ```
 
-- equality: 3*t+3 = 3*s+12
-- inequality: t+c+2 > s+c+4
-- inequality_template: _+c+2>_+c+4
-- answer: t (left), s (right)
+- equality: `3*t+3 = 3*s+12`
+- inequality: `t+c+2 > s+c+4`
+- inequality_template: `_+c+2>_+c+4`
+- answer: `t (left), s (right)`
