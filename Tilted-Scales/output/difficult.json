@@ -1,0 +1,284 @@
+[
+  {
+    "id": "difficult-001",
+    "difficulty": "difficult",
+    "equality": {
+      "left": {
+        "shapes": {
+          "c": 1,
+          "s": 0,
+          "t": 0
+        },
+        "weight": 4
+      },
+      "right": {
+        "shapes": {
+          "c": 0,
+          "s": 1,
+          "t": 0
+        },
+        "weight": 8
+      }
+    },
+    "inequality": {
+      "left": {
+        "shapes": {
+          "c": 1,
+          "s": 0,
+          "t": 0
+        },
+        "weight": 0
+      },
+      "right": {
+        "shapes": {
+          "c": 0,
+          "s": 1,
+          "t": 0
+        },
+        "weight": 3
+      }
+    },
+    "ineq_template": "_>_+3",
+    "answer": [
+      "c",
+      "s"
+    ],
+    "explanation": "",
+    "reasoned_answer": ""
+  },
+  {
+    "id": "difficult-002",
+    "difficulty": "difficult",
+    "equality": {
+      "left": {
+        "shapes": {
+          "s": 1,
+          "c": 0,
+          "t": 0
+        },
+        "weight": 5
+      },
+      "right": {
+        "shapes": {
+          "s": 0,
+          "c": 1,
+          "t": 0
+        },
+        "weight": 3
+      }
+    },
+    "inequality": {
+      "left": {
+        "shapes": {
+          "s": 0,
+          "c": 1,
+          "t": 0
+        },
+        "weight": 0
+      },
+      "right": {
+        "shapes": {
+          "s": 1,
+          "c": 0,
+          "t": 0
+        },
+        "weight": 1
+      }
+    },
+    "ineq_template": "_>_+1",
+    "answer": [
+      "c",
+      "s"
+    ],
+    "explanation": "",
+    "reasoned_answer": ""
+  },
+  {
+    "id": "difficult-003",
+    "difficulty": "difficult",
+    "equality": {
+      "left": {
+        "shapes": {
+          "s": 2,
+          "t": 0,
+          "c": 0
+        },
+        "weight": 12
+      },
+      "right": {
+        "shapes": {
+          "s": 0,
+          "t": 2,
+          "c": 0
+        },
+        "weight": 4
+      }
+    },
+    "inequality": {
+      "left": {
+        "shapes": {
+          "s": 0,
+          "t": 1,
+          "c": 0
+        },
+        "weight": 0
+      },
+      "right": {
+        "shapes": {
+          "s": 1,
+          "t": 0,
+          "c": 0
+        },
+        "weight": 3
+      }
+    },
+    "ineq_template": "_>_+3",
+    "answer": [
+      "t",
+      "s"
+    ],
+    "explanation": "",
+    "reasoned_answer": ""
+  },
+  {
+    "id": "difficult-004",
+    "difficulty": "difficult",
+    "equality": {
+      "left": {
+        "shapes": {
+          "t": 3,
+          "s": 0,
+          "c": 0
+        },
+        "weight": 3
+      },
+      "right": {
+        "shapes": {
+          "t": 0,
+          "s": 3,
+          "c": 0
+        },
+        "weight": 12
+      }
+    },
+    "inequality": {
+      "left": {
+        "shapes": {
+          "t": 1,
+          "s": 0,
+          "c": 1
+        },
+        "weight": 2
+      },
+      "right": {
+        "shapes": {
+          "t": 0,
+          "s": 1,
+          "c": 1
+        },
+        "weight": 4
+      }
+    },
+    "ineq_template": "_+c+2>_+c+4",
+    "answer": [
+      "t",
+      "s"
+    ],
+    "explanation": "",
+    "reasoned_answer": ""
+  },
+  {
+    "id": "difficult-005",
+    "difficulty": "difficult",
+    "equality": {
+      "left": {
+        "shapes": {
+          "c": 1,
+          "s": 0,
+          "t": 0
+        },
+        "weight": 8
+      },
+      "right": {
+        "shapes": {
+          "c": 0,
+          "s": 1,
+          "t": 0
+        },
+        "weight": 4
+      }
+    },
+    "inequality": {
+      "left": {
+        "shapes": {
+          "c": 0,
+          "s": 1,
+          "t": 1
+        },
+        "weight": 4
+      },
+      "right": {
+        "shapes": {
+          "c": 1,
+          "s": 0,
+          "t": 1
+        },
+        "weight": 7
+      }
+    },
+    "ineq_template": "_+t+4>_+t+7",
+    "answer": [
+      "s",
+      "c"
+    ],
+    "explanation": "",
+    "reasoned_answer": ""
+  },
+  {
+    "id": "difficult-006",
+    "difficulty": "difficult",
+    "equality": {
+      "left": {
+        "shapes": {
+          "t": 3,
+          "s": 0,
+          "c": 0
+        },
+        "weight": 21
+      },
+      "right": {
+        "shapes": {
+          "t": 0,
+          "s": 3,
+          "c": 0
+        },
+        "weight": 12
+      }
+    },
+    "inequality": {
+      "left": {
+        "shapes": {
+          "t": 0,
+          "s": 1,
+          "c": 1
+        },
+        "weight": 3
+      },
+      "right": {
+        "shapes": {
+          "t": 1,
+          "s": 0,
+          "c": 1
+        },
+        "weight": 5
+      }
+    },
+    "ineq_template": "_+c+3>_+c+5",
+    "answer": [
+      "s",
+      "t"
+    ],
+    "explanation": "",
+    "reasoned_answer": ""
+  }
+]

@@ -1,0 +1,290 @@
+[
+  {
+    "id": "easy-001",
+    "difficulty": "easy",
+    "equality": {
+      "left": {
+        "shapes": {
+          "c": 1,
+          "t": 0,
+          "s": 0
+        },
+        "weight": 0
+      },
+      "right": {
+        "shapes": {
+          "c": 0,
+          "t": 4,
+          "s": 0
+        },
+        "weight": 0
+      }
+    },
+    "inequality": {
+      "left": {
+        "shapes": {
+          "c": 0,
+          "t": 1,
+          "s": 0
+        },
+        "weight": 0
+      },
+      "right": {
+        "shapes": {
+          "c": 1,
+          "t": 0,
+          "s": 0
+        },
+        "weight": 0
+      },
+      "op": "<"
+    },
+    "ineq_template": "_<_",
+    "answer": [
+      "t",
+      "c"
+    ],
+    "explanation": "1 circle equals 4 triangles, so circles are heavier than triangles. t<c",
+    "reasoned_answer": "t<c"
+  },
+  {
+    "id": "easy-002",
+    "difficulty": "easy",
+    "equality": {
+      "left": {
+        "shapes": {
+          "s": 3,
+          "c": 0,
+          "t": 0
+        },
+        "weight": 5
+      },
+      "right": {
+        "shapes": {
+          "s": 0,
+          "c": 3,
+          "t": 0
+        },
+        "weight": 3
+      }
+    },
+    "inequality": {
+      "left": {
+        "shapes": {
+          "s": 0,
+          "c": 1,
+          "t": 0
+        },
+        "weight": 0
+      },
+      "right": {
+        "shapes": {
+          "s": 1,
+          "c": 0,
+          "t": 0
+        },
+        "weight": 0
+      },
+      "op": ">"
+    },
+    "ineq_template": "_>_",
+    "answer": [
+      "c",
+      "s"
+    ],
+    "explanation": "3 squares + 5 weight equals 3 circles + 3 weight, so squares need less added weight making them heavier. c>s",
+    "reasoned_answer": "c>s"
+  },
+  {
+    "id": "easy-003",
+    "difficulty": "easy",
+    "equality": {
+      "left": {
+        "shapes": {
+          "c": 1,
+          "t": 0,
+          "s": 0
+        },
+        "weight": 4
+      },
+      "right": {
+        "shapes": {
+          "c": 0,
+          "t": 1,
+          "s": 0
+        },
+        "weight": 6
+      }
+    },
+    "inequality": {
+      "left": {
+        "shapes": {
+          "c": 0,
+          "t": 1,
+          "s": 0
+        },
+        "weight": 0
+      },
+      "right": {
+        "shapes": {
+          "c": 1,
+          "t": 0,
+          "s": 0
+        },
+        "weight": 0
+      },
+      "op": "<"
+    },
+    "ineq_template": "_<_",
+    "answer": [
+      "t",
+      "c"
+    ],
+    "explanation": "1 circle + 4 weight equals 1 triangle + 6 weight, so circles need less added weight making them heavier. t<c",
+    "reasoned_answer": "t<c"
+  },
+  {
+    "id": "easy-004",
+    "difficulty": "easy",
+    "equality": {
+      "left": {
+        "shapes": {
+          "c": 1,
+          "t": 0,
+          "s": 0
+        },
+        "weight": 0
+      },
+      "right": {
+        "shapes": {
+          "c": 0,
+          "t": 3,
+          "s": 0
+        },
+        "weight": 0
+      }
+    },
+    "inequality": {
+      "left": {
+        "shapes": {
+          "c": 1,
+          "t": 0,
+          "s": 0
+        },
+        "weight": 0
+      },
+      "right": {
+        "shapes": {
+          "c": 0,
+          "t": 1,
+          "s": 0
+        },
+        "weight": 0
+      },
+      "op": ">"
+    },
+    "ineq_template": "_>_",
+    "answer": [
+      "c",
+      "t"
+    ],
+    "explanation": "1 circle equals 3 triangles, so circles are heavier than triangles. c>t",
+    "reasoned_answer": "c>t"
+  },
+  {
+    "id": "easy-005",
+    "difficulty": "easy",
+    "equality": {
+      "left": {
+        "shapes": {
+          "c": 3,
+          "s": 0,
+          "t": 1
+        },
+        "weight": 0
+      },
+      "right": {
+        "shapes": {
+          "c": 0,
+          "s": 2,
+          "t": 1
+        },
+        "weight": 0
+      }
+    },
+    "inequality": {
+      "left": {
+        "shapes": {
+          "c": 0,
+          "s": 1,
+          "t": 0
+        },
+        "weight": 0
+      },
+      "right": {
+        "shapes": {
+          "c": 1,
+          "s": 0,
+          "t": 0
+        },
+        "weight": 0
+      },
+      "op": ">"
+    },
+    "ineq_template": "_>_",
+    "answer": [
+      "s",
+      "c"
+    ],
+    "explanation": "3 circles + 1 triangle equals 2 squares + 1 triangle, so 3 circles equal 2 squares making squares heavier. s>c",
+    "reasoned_answer": "s>c"
+  },
+  {
+    "id": "easy-006",
+    "difficulty": "easy",
+    "equality": {
+      "left": {
+        "shapes": {
+          "s": 3,
+          "t": 0,
+          "c": 0
+        },
+        "weight": 4
+      },
+      "right": {
+        "shapes": {
+          "s": 0,
+          "t": 3,
+          "c": 0
+        },
+        "weight": 3
+      }
+    },
+    "inequality": {
+      "left": {
+        "shapes": {
+          "s": 0,
+          "t": 1,
+          "c": 0
+        },
+        "weight": 0
+      },
+      "right": {
+        "shapes": {
+          "s": 1,
+          "t": 0,
+          "c": 0
+        },
+        "weight": 0
+      },
+      "op": ">"
+    },
+    "ineq_template": "_>_",
+    "answer": [
+      "t",
+      "s"
+    ],
+    "explanation": "3 squares + 4 weight equals 3 triangles + 3 weight, so squares need less added weight making them heavier. t>s",
+    "reasoned_answer": "t>s"
+  }
+]
