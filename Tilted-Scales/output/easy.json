@@ -5,17 +5,65 @@
     "equality": {
       "left": {
         "shapes": {
+          "c": 3,
+          "s": 0,
+          "t": 0
+        },
+        "weight": 1
+      },
+      "right": {
+        "shapes": {
+          "c": 0,
+          "s": 3,
+          "t": 0
+        },
+        "weight": 6
+      }
+    },
+    "inequality": {
+      "left": {
+        "shapes": {
           "c": 1,
-          "t": 0,
-          "s": 0
+          "s": 0,
+          "t": 0
         },
         "weight": 0
       },
       "right": {
         "shapes": {
           "c": 0,
-          "t": 4,
-          "s": 0
+          "s": 1,
+          "t": 0
+        },
+        "weight": 0
+      },
+      "op": ">"
+    },
+    "ineq_template": "_>_",
+    "answer": [
+      "c",
+      "s"
+    ],
+    "explanation": "From 3c+1=3s+6, we get c+1/3=s+2, so c needs less added weight than s. c>s",
+    "reasoned_answer": "c>s"
+  },
+  {
+    "id": "easy-002",
+    "difficulty": "easy",
+    "equality": {
+      "left": {
+        "shapes": {
+          "c": 3,
+          "s": 0,
+          "t": 1
+        },
+        "weight": 0
+      },
+      "right": {
+        "shapes": {
+          "c": 0,
+          "s": 6,
+          "t": 1
         },
         "weight": 0
       }
@@ -24,15 +72,111 @@
       "left": {
         "shapes": {
           "c": 0,
-          "t": 1,
-          "s": 0
+          "s": 1,
+          "t": 0
         },
         "weight": 0
       },
       "right": {
         "shapes": {
           "c": 1,
+          "s": 0,
+          "t": 0
+        },
+        "weight": 0
+      },
+      "op": "<"
+    },
+    "ineq_template": "_<_",
+    "answer": [
+      "s",
+      "c"
+    ],
+    "explanation": "From 3c+t=6s+t, we get 3c=6s, so c=2s, meaning more c needed than s. s<c",
+    "reasoned_answer": "s<c"
+  },
+  {
+    "id": "easy-003",
+    "difficulty": "easy",
+    "equality": {
+      "left": {
+        "shapes": {
+          "s": 1,
+          "c": 0,
+          "t": 0
+        },
+        "weight": 1
+      },
+      "right": {
+        "shapes": {
+          "s": 0,
+          "c": 1,
+          "t": 0
+        },
+        "weight": 5
+      }
+    },
+    "inequality": {
+      "left": {
+        "shapes": {
+          "s": 0,
+          "c": 1,
+          "t": 0
+        },
+        "weight": 0
+      },
+      "right": {
+        "shapes": {
+          "s": 1,
+          "c": 0,
+          "t": 0
+        },
+        "weight": 0
+      },
+      "op": "<"
+    },
+    "ineq_template": "_<_",
+    "answer": [
+      "c",
+      "s"
+    ],
+    "explanation": "From s+1=c+5, we get s=c+4, so s needs less added weight than c. c<s",
+    "reasoned_answer": "c<s"
+  },
+  {
+    "id": "easy-004",
+    "difficulty": "easy",
+    "equality": {
+      "left": {
+        "shapes": {
+          "t": 6,
+          "c": 0,
+          "s": 0
+        },
+        "weight": 0
+      },
+      "right": {
+        "shapes": {
           "t": 0,
+          "c": 3,
+          "s": 0
+        },
+        "weight": 0
+      }
+    },
+    "inequality": {
+      "left": {
+        "shapes": {
+          "t": 1,
+          "c": 0,
+          "s": 0
+        },
+        "weight": 0
+      },
+      "right": {
+        "shapes": {
+          "t": 0,
+          "c": 1,
           "s": 0
         },
         "weight": 0
@@ -44,16 +188,208 @@
       "t",
       "c"
     ],
-    "explanation": "1 circle equals 4 triangles, so circles are heavier than triangles. t<c",
+    "explanation": "From 6t=3c, we get 2t=c, so more t needed than c. t<c",
     "reasoned_answer": "t<c"
   },
   {
-    "id": "easy-002",
+    "id": "easy-005",
     "difficulty": "easy",
     "equality": {
       "left": {
         "shapes": {
-          "s": 3,
+          "t": 2,
+          "s": 0,
+          "c": 0
+        },
+        "weight": 2
+      },
+      "right": {
+        "shapes": {
+          "t": 0,
+          "s": 2,
+          "c": 0
+        },
+        "weight": 1
+      }
+    },
+    "inequality": {
+      "left": {
+        "shapes": {
+          "t": 0,
+          "s": 1,
+          "c": 0
+        },
+        "weight": 0
+      },
+      "right": {
+        "shapes": {
+          "t": 1,
+          "s": 0,
+          "c": 0
+        },
+        "weight": 0
+      },
+      "op": ">"
+    },
+    "ineq_template": "_>_",
+    "answer": [
+      "s",
+      "t"
+    ],
+    "explanation": "From 2t+2=2s+1, we get t+1=s+0.5, so t needs less added weight than s. s>t",
+    "reasoned_answer": "s>t"
+  },
+  {
+    "id": "easy-006",
+    "difficulty": "easy",
+    "equality": {
+      "left": {
+        "shapes": {
+          "c": 3,
+          "t": 0,
+          "s": 0
+        },
+        "weight": 0
+      },
+      "right": {
+        "shapes": {
+          "c": 0,
+          "t": 1,
+          "s": 0
+        },
+        "weight": 0
+      }
+    },
+    "inequality": {
+      "left": {
+        "shapes": {
+          "c": 1,
+          "t": 0,
+          "s": 0
+        },
+        "weight": 0
+      },
+      "right": {
+        "shapes": {
+          "c": 0,
+          "t": 1,
+          "s": 0
+        },
+        "weight": 0
+      },
+      "op": "<"
+    },
+    "ineq_template": "_<_",
+    "answer": [
+      "c",
+      "t"
+    ],
+    "explanation": "From 3c=t, more c needed than t. c<t",
+    "reasoned_answer": "c<t"
+  },
+  {
+    "id": "easy-007",
+    "difficulty": "easy",
+    "equality": {
+      "left": {
+        "shapes": {
+          "t": 4,
+          "s": 0,
+          "c": 0
+        },
+        "weight": 1
+      },
+      "right": {
+        "shapes": {
+          "t": 0,
+          "s": 4,
+          "c": 0
+        },
+        "weight": 6
+      }
+    },
+    "inequality": {
+      "left": {
+        "shapes": {
+          "t": 1,
+          "s": 0,
+          "c": 0
+        },
+        "weight": 0
+      },
+      "right": {
+        "shapes": {
+          "t": 0,
+          "s": 1,
+          "c": 0
+        },
+        "weight": 0
+      },
+      "op": ">"
+    },
+    "ineq_template": "_>_",
+    "answer": [
+      "t",
+      "s"
+    ],
+    "explanation": "From 4t+1=4s+6, we get t+0.25=s+1.5, so t needs less added weight than s. t>s",
+    "reasoned_answer": "t>s"
+  },
+  {
+    "id": "easy-008",
+    "difficulty": "easy",
+    "equality": {
+      "left": {
+        "shapes": {
+          "t": 4,
+          "c": 0,
+          "s": 0
+        },
+        "weight": 6
+      },
+      "right": {
+        "shapes": {
+          "t": 0,
+          "c": 4,
+          "s": 0
+        },
+        "weight": 3
+      }
+    },
+    "inequality": {
+      "left": {
+        "shapes": {
+          "t": 1,
+          "c": 0,
+          "s": 0
+        },
+        "weight": 0
+      },
+      "right": {
+        "shapes": {
+          "t": 0,
+          "c": 1,
+          "s": 0
+        },
+        "weight": 0
+      },
+      "op": "<"
+    },
+    "ineq_template": "_<_",
+    "answer": [
+      "t",
+      "c"
+    ],
+    "explanation": "From 4t+6=4c+3, we get t+1.5=c+0.75, so t needs more added weight than c. t<c",
+    "reasoned_answer": "t<c"
+  },
+  {
+    "id": "easy-009",
+    "difficulty": "easy",
+    "equality": {
+      "left": {
+        "shapes": {
+          "s": 1,
           "c": 0,
           "t": 0
         },
@@ -62,10 +398,58 @@
       "right": {
         "shapes": {
           "s": 0,
-          "c": 3,
+          "c": 1,
           "t": 0
         },
-        "weight": 3
+        "weight": 1
+      }
+    },
+    "inequality": {
+      "left": {
+        "shapes": {
+          "s": 1,
+          "c": 0,
+          "t": 0
+        },
+        "weight": 0
+      },
+      "right": {
+        "shapes": {
+          "s": 0,
+          "c": 1,
+          "t": 0
+        },
+        "weight": 0
+      },
+      "op": "<"
+    },
+    "ineq_template": "_<_",
+    "answer": [
+      "s",
+      "c"
+    ],
+    "explanation": "From s+5=c+1, we get s=c-4, so s needs less added weight than c. s<c",
+    "reasoned_answer": "s<c"
+  },
+  {
+    "id": "easy-010",
+    "difficulty": "easy",
+    "equality": {
+      "left": {
+        "shapes": {
+          "s": 4,
+          "c": 0,
+          "t": 0
+        },
+        "weight": 0
+      },
+      "right": {
+        "shapes": {
+          "s": 0,
+          "c": 2,
+          "t": 0
+        },
+        "weight": 0
       }
     },
     "inequality": {
@@ -92,64 +476,16 @@
       "c",
       "s"
     ],
-    "explanation": "3 squares + 5 weight equals 3 circles + 3 weight, so squares need less added weight making them heavier. c>s",
+    "explanation": "From 4s=2c, we get 2s=c, so more s needed than c. c>s",
     "reasoned_answer": "c>s"
   },
   {
-    "id": "easy-003",
+    "id": "easy-011",
     "difficulty": "easy",
     "equality": {
       "left": {
         "shapes": {
-          "c": 1,
-          "t": 0,
-          "s": 0
-        },
-        "weight": 4
-      },
-      "right": {
-        "shapes": {
-          "c": 0,
-          "t": 1,
-          "s": 0
-        },
-        "weight": 6
-      }
-    },
-    "inequality": {
-      "left": {
-        "shapes": {
-          "c": 0,
-          "t": 1,
-          "s": 0
-        },
-        "weight": 0
-      },
-      "right": {
-        "shapes": {
-          "c": 1,
-          "t": 0,
-          "s": 0
-        },
-        "weight": 0
-      },
-      "op": "<"
-    },
-    "ineq_template": "_<_",
-    "answer": [
-      "t",
-      "c"
-    ],
-    "explanation": "1 circle + 4 weight equals 1 triangle + 6 weight, so circles need less added weight making them heavier. t<c",
-    "reasoned_answer": "t<c"
-  },
-  {
-    "id": "easy-004",
-    "difficulty": "easy",
-    "equality": {
-      "left": {
-        "shapes": {
-          "c": 1,
+          "c": 3,
           "t": 0,
           "s": 0
         },
@@ -158,7 +494,7 @@
       "right": {
         "shapes": {
           "c": 0,
-          "t": 3,
+          "t": 5,
           "s": 0
         },
         "weight": 0
@@ -188,91 +524,43 @@
       "c",
       "t"
     ],
-    "explanation": "1 circle equals 3 triangles, so circles are heavier than triangles. c>t",
+    "explanation": "From 3c=5t, more c needed than t. c>t",
     "reasoned_answer": "c>t"
   },
   {
-    "id": "easy-005",
+    "id": "easy-012",
     "difficulty": "easy",
     "equality": {
       "left": {
         "shapes": {
-          "c": 3,
-          "s": 0,
-          "t": 1
-        },
-        "weight": 0
-      },
-      "right": {
-        "shapes": {
-          "c": 0,
-          "s": 2,
-          "t": 1
-        },
-        "weight": 0
-      }
-    },
-    "inequality": {
-      "left": {
-        "shapes": {
-          "c": 0,
-          "s": 1,
-          "t": 0
-        },
-        "weight": 0
-      },
-      "right": {
-        "shapes": {
-          "c": 1,
-          "s": 0,
-          "t": 0
-        },
-        "weight": 0
-      },
-      "op": ">"
-    },
-    "ineq_template": "_>_",
-    "answer": [
-      "s",
-      "c"
-    ],
-    "explanation": "3 circles + 1 triangle equals 2 squares + 1 triangle, so 3 circles equal 2 squares making squares heavier. s>c",
-    "reasoned_answer": "s>c"
-  },
-  {
-    "id": "easy-006",
-    "difficulty": "easy",
-    "equality": {
-      "left": {
-        "shapes": {
-          "s": 3,
-          "t": 0,
-          "c": 0
-        },
-        "weight": 4
-      },
-      "right": {
-        "shapes": {
-          "s": 0,
           "t": 3,
+          "s": 0,
           "c": 0
         },
         "weight": 3
+      },
+      "right": {
+        "shapes": {
+          "t": 0,
+          "s": 3,
+          "c": 0
+        },
+        "weight": 5
       }
     },
     "inequality": {
       "left": {
         "shapes": {
-          "s": 0,
           "t": 1,
+          "s": 0,
           "c": 0
         },
         "weight": 0
       },
       "right": {
         "shapes": {
-          "s": 1,
           "t": 0,
+          "s": 1,
           "c": 0
         },
         "weight": 0
@@ -284,7 +572,151 @@
       "t",
       "s"
     ],
-    "explanation": "3 squares + 4 weight equals 3 triangles + 3 weight, so squares need less added weight making them heavier. t>s",
+    "explanation": "From 3t+3=3s+5, we get t+1=s+5/3, so t needs less added weight than s. t>s",
     "reasoned_answer": "t>s"
+  },
+  {
+    "id": "easy-013",
+    "difficulty": "easy",
+    "equality": {
+      "left": {
+        "shapes": {
+          "s": 1,
+          "c": 0,
+          "t": 0
+        },
+        "weight": 0
+      },
+      "right": {
+        "shapes": {
+          "s": 0,
+          "c": 6,
+          "t": 0
+        },
+        "weight": 0
+      }
+    },
+    "inequality": {
+      "left": {
+        "shapes": {
+          "s": 1,
+          "c": 0,
+          "t": 0
+        },
+        "weight": 0
+      },
+      "right": {
+        "shapes": {
+          "s": 0,
+          "c": 1,
+          "t": 0
+        },
+        "weight": 0
+      },
+      "op": ">"
+    },
+    "ineq_template": "_>_",
+    "answer": [
+      "s",
+      "c"
+    ],
+    "explanation": "From s=6c, fewer s needed than c. s>c",
+    "reasoned_answer": "s>c"
+  },
+  {
+    "id": "easy-014",
+    "difficulty": "easy",
+    "equality": {
+      "left": {
+        "shapes": {
+          "s": 4,
+          "t": 0,
+          "c": 4
+        },
+        "weight": 0
+      },
+      "right": {
+        "shapes": {
+          "s": 0,
+          "t": 6,
+          "c": 4
+        },
+        "weight": 0
+      }
+    },
+    "inequality": {
+      "left": {
+        "shapes": {
+          "s": 1,
+          "t": 0,
+          "c": 0
+        },
+        "weight": 0
+      },
+      "right": {
+        "shapes": {
+          "s": 0,
+          "t": 1,
+          "c": 0
+        },
+        "weight": 0
+      },
+      "op": ">"
+    },
+    "ineq_template": "_>_",
+    "answer": [
+      "s",
+      "t"
+    ],
+    "explanation": "From 4s+4c=6t+4c, we get 4s=6t, so 2s=3t, meaning more s needed than t. s>t",
+    "reasoned_answer": "s>t"
+  },
+  {
+    "id": "easy-015",
+    "difficulty": "easy",
+    "equality": {
+      "left": {
+        "shapes": {
+          "t": 3,
+          "c": 0,
+          "s": 0
+        },
+        "weight": 2
+      },
+      "right": {
+        "shapes": {
+          "t": 0,
+          "c": 3,
+          "s": 0
+        },
+        "weight": 1
+      }
+    },
+    "inequality": {
+      "left": {
+        "shapes": {
+          "t": 1,
+          "c": 0,
+          "s": 0
+        },
+        "weight": 0
+      },
+      "right": {
+        "shapes": {
+          "t": 0,
+          "c": 1,
+          "s": 0
+        },
+        "weight": 0
+      },
+      "op": "<"
+    },
+    "ineq_template": "_<_",
+    "answer": [
+      "t",
+      "c"
+    ],
+    "explanation": "From 3t+2=3c+1, we get t+2/3=c+1/3, so t needs more added weight than c. t<c",
+    "reasoned_answer": "t<c"
   }
 ]

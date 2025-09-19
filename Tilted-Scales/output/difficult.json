@@ -5,96 +5,49 @@
     "equality": {
       "left": {
         "shapes": {
-          "c": 1,
+          "t": 3,
           "s": 0,
-          "t": 0
+          "c": 0
         },
-        "weight": 4
+        "weight": 12
       },
       "right": {
         "shapes": {
-          "c": 0,
-          "s": 1,
-          "t": 0
+          "t": 0,
+          "s": 3,
+          "c": 0
         },
-        "weight": 8
+        "weight": 21
       }
     },
     "inequality": {
       "left": {
         "shapes": {
-          "c": 1,
+          "t": 1,
           "s": 0,
-          "t": 0
+          "c": 0
         },
         "weight": 0
       },
       "right": {
         "shapes": {
-          "c": 0,
+          "t": 0,
           "s": 1,
-          "t": 0
+          "c": 0
         },
-        "weight": 3
+        "weight": 2
       }
     },
-    "ineq_template": "_>_+3",
+    "ineq_template": "_>_+2",
     "answer": [
-      "c",
+      "t",
       "s"
     ],
-    "explanation": "",
-    "reasoned_answer": ""
+    "explanation": "Since 3t+12=3s+21, triangle is 3 lighter than square. So t>s+2.",
+    "reasoned_answer": "t>s+2"
   },
   {
     "id": "difficult-002",
-    "difficulty": "difficult",
-    "equality": {
-      "left": {
-        "shapes": {
-          "s": 1,
-          "c": 0,
-          "t": 0
-        },
-        "weight": 5
-      },
-      "right": {
-        "shapes": {
-          "s": 0,
-          "c": 1,
-          "t": 0
-        },
-        "weight": 3
-      }
-    },
-    "inequality": {
-      "left": {
-        "shapes": {
-          "s": 0,
-          "c": 1,
-          "t": 0
-        },
-        "weight": 0
-      },
-      "right": {
-        "shapes": {
-          "s": 1,
-          "c": 0,
-          "t": 0
-        },
-        "weight": 1
-      }
-    },
-    "ineq_template": "_>_+1",
-    "answer": [
-      "c",
-      "s"
-    ],
-    "explanation": "",
-    "reasoned_answer": ""
-  },
-  {
-    "id": "difficult-003",
     "difficulty": "difficult",
     "equality": {
       "left": {
@@ -103,7 +56,7 @@
           "t": 0,
           "c": 0
         },
-        "weight": 12
+        "weight": 14
       },
       "right": {
         "shapes": {
@@ -111,7 +64,7 @@
           "t": 2,
           "c": 0
         },
-        "weight": 4
+        "weight": 8
       }
     },
     "inequality": {
@@ -119,14 +72,61 @@
         "shapes": {
           "s": 0,
           "t": 1,
+          "c": 1
+        },
+        "weight": 3
+      },
+      "right": {
+        "shapes": {
+          "s": 1,
+          "t": 0,
+          "c": 1
+        },
+        "weight": 5
+      }
+    },
+    "ineq_template": "_+c+3>_+c+5",
+    "answer": [
+      "t",
+      "s"
+    ],
+    "explanation": "Since 2s+14=2t+8, square is 3 heavier than triangle. Cancel c; left adds 3, right adds 5, but triangle still heavier. So t+c+3>s+c+5.",
+    "reasoned_answer": "t+c+3>s+c+5"
+  },
+  {
+    "id": "difficult-003",
+    "difficulty": "difficult",
+    "equality": {
+      "left": {
+        "shapes": {
+          "t": 1,
+          "s": 0,
+          "c": 0
+        },
+        "weight": 3
+      },
+      "right": {
+        "shapes": {
+          "t": 0,
+          "s": 1,
+          "c": 0
+        },
+        "weight": 7
+      }
+    },
+    "inequality": {
+      "left": {
+        "shapes": {
+          "t": 1,
+          "s": 0,
           "c": 0
         },
         "weight": 0
       },
       "right": {
         "shapes": {
-          "s": 1,
           "t": 0,
+          "s": 1,
           "c": 0
         },
         "weight": 3
@@ -137,8 +137,8 @@
       "t",
       "s"
     ],
-    "explanation": "",
-    "reasoned_answer": ""
+    "explanation": "Since t+3=s+7, triangle is 4 lighter than square. So t>s+3.",
+    "reasoned_answer": "t>s+3"
   },
   {
     "id": "difficult-004",
@@ -146,46 +146,46 @@
     "equality": {
       "left": {
         "shapes": {
-          "t": 3,
+          "c": 3,
           "s": 0,
-          "c": 0
+          "t": 0
         },
         "weight": 3
       },
       "right": {
         "shapes": {
-          "t": 0,
+          "c": 0,
           "s": 3,
-          "c": 0
+          "t": 0
         },
-        "weight": 12
+        "weight": 15
       }
     },
     "inequality": {
       "left": {
         "shapes": {
-          "t": 1,
+          "c": 1,
           "s": 0,
-          "c": 1
+          "t": 0
         },
-        "weight": 2
+        "weight": 0
       },
       "right": {
         "shapes": {
-          "t": 0,
+          "c": 0,
           "s": 1,
-          "c": 1
+          "t": 0
         },
-        "weight": 4
+        "weight": 3
       }
     },
-    "ineq_template": "_+c+2>_+c+4",
+    "ineq_template": "_>_+3",
     "answer": [
-      "t",
+      "c",
       "s"
     ],
-    "explanation": "",
-    "reasoned_answer": ""
+    "explanation": "Since 3c+3=3s+15, circle is 4 lighter than square. So c>s+3.",
+    "reasoned_answer": "c>s+3"
   },
   {
     "id": "difficult-005",
@@ -193,19 +193,19 @@
     "equality": {
       "left": {
         "shapes": {
-          "c": 1,
+          "c": 3,
           "s": 0,
           "t": 0
         },
-        "weight": 8
+        "weight": 21
       },
       "right": {
         "shapes": {
           "c": 0,
-          "s": 1,
+          "s": 3,
           "t": 0
         },
-        "weight": 4
+        "weight": 12
       }
     },
     "inequality": {
@@ -213,29 +213,123 @@
         "shapes": {
           "c": 0,
           "s": 1,
-          "t": 1
+          "t": 0
         },
-        "weight": 4
+        "weight": 0
       },
       "right": {
         "shapes": {
           "c": 1,
           "s": 0,
-          "t": 1
+          "t": 0
         },
-        "weight": 7
+        "weight": 2
       }
     },
-    "ineq_template": "_+t+4>_+t+7",
+    "ineq_template": "_>_+2",
     "answer": [
       "s",
       "c"
     ],
-    "explanation": "",
-    "reasoned_answer": ""
+    "explanation": "Since 3c+21=3s+12, circle is 3 heavier than square. So s>c+2.",
+    "reasoned_answer": "s>c+2"
   },
   {
     "id": "difficult-006",
+    "difficulty": "difficult",
+    "equality": {
+      "left": {
+        "shapes": {
+          "c": 3,
+          "t": 0,
+          "s": 0
+        },
+        "weight": 3
+      },
+      "right": {
+        "shapes": {
+          "c": 0,
+          "t": 3,
+          "s": 0
+        },
+        "weight": 9
+      }
+    },
+    "inequality": {
+      "left": {
+        "shapes": {
+          "c": 1,
+          "t": 0,
+          "s": 1
+        },
+        "weight": 1
+      },
+      "right": {
+        "shapes": {
+          "c": 0,
+          "t": 1,
+          "s": 1
+        },
+        "weight": 2
+      }
+    },
+    "ineq_template": "_+s+1>_+s+2",
+    "answer": [
+      "c",
+      "t"
+    ],
+    "explanation": "Since 3c+3=3t+9, circle is 2 lighter than triangle. Cancel s; left adds 1, right adds 2, but circle still lighter. So c+s+1>t+s+2.",
+    "reasoned_answer": "c+s+1>t+s+2"
+  },
+  {
+    "id": "difficult-007",
+    "difficulty": "difficult",
+    "equality": {
+      "left": {
+        "shapes": {
+          "s": 1,
+          "t": 0,
+          "c": 0
+        },
+        "weight": 4
+      },
+      "right": {
+        "shapes": {
+          "s": 0,
+          "t": 1,
+          "c": 0
+        },
+        "weight": 2
+      }
+    },
+    "inequality": {
+      "left": {
+        "shapes": {
+          "s": 0,
+          "t": 1,
+          "c": 1
+        },
+        "weight": 2
+      },
+      "right": {
+        "shapes": {
+          "s": 1,
+          "t": 0,
+          "c": 1
+        },
+        "weight": 3
+      }
+    },
+    "ineq_template": "_+c+2>_+c+3",
+    "answer": [
+      "t",
+      "s"
+    ],
+    "explanation": "Since s+4=t+2, square is 2 heavier than triangle. Cancel c; left adds 2, right adds 3, triangle still heavier. So t+c+2>s+c+3.",
+    "reasoned_answer": "t+c+2>s+c+3"
+  },
+  {
+    "id": "difficult-008",
     "difficulty": "difficult",
     "equality": {
       "left": {
@@ -244,7 +338,7 @@
           "s": 0,
           "c": 0
         },
-        "weight": 21
+        "weight": 9
       },
       "right": {
         "shapes": {
@@ -252,33 +346,362 @@
           "s": 3,
           "c": 0
         },
-        "weight": 12
+        "weight": 15
       }
     },
     "inequality": {
       "left": {
         "shapes": {
-          "t": 0,
-          "s": 1,
+          "t": 1,
+          "s": 0,
           "c": 1
         },
         "weight": 3
       },
       "right": {
         "shapes": {
-          "t": 1,
+          "t": 0,
+          "s": 1,
+          "c": 1
+        },
+        "weight": 4
+      }
+    },
+    "ineq_template": "_+c+3>_+c+4",
+    "answer": [
+      "t",
+      "s"
+    ],
+    "explanation": "Since 3t+9=3s+15, triangle is 2 lighter than square. Cancel c; left adds 3, right adds 4, triangle still lighter. So t+c+3>s+c+4.",
+    "reasoned_answer": "t+c+3>s+c+4"
+  },
+  {
+    "id": "difficult-009",
+    "difficulty": "difficult",
+    "equality": {
+      "left": {
+        "shapes": {
+          "s": 3,
+          "c": 0,
+          "t": 0
+        },
+        "weight": 3
+      },
+      "right": {
+        "shapes": {
           "s": 0,
+          "c": 3,
+          "t": 0
+        },
+        "weight": 15
+      }
+    },
+    "inequality": {
+      "left": {
+        "shapes": {
+          "s": 1,
+          "c": 0,
+          "t": 0
+        },
+        "weight": 0
+      },
+      "right": {
+        "shapes": {
+          "s": 0,
+          "c": 1,
+          "t": 0
+        },
+        "weight": 3
+      }
+    },
+    "ineq_template": "_>_+3",
+    "answer": [
+      "s",
+      "c"
+    ],
+    "explanation": "Since 3s+3=3c+15, square is 4 lighter than circle. So s>c+3.",
+    "reasoned_answer": "s>c+3"
+  },
+  {
+    "id": "difficult-010",
+    "difficulty": "difficult",
+    "equality": {
+      "left": {
+        "shapes": {
+          "c": 2,
+          "t": 0,
+          "s": 0
+        },
+        "weight": 4
+      },
+      "right": {
+        "shapes": {
+          "c": 0,
+          "t": 2,
+          "s": 0
+        },
+        "weight": 8
+      }
+    },
+    "inequality": {
+      "left": {
+        "shapes": {
+          "c": 1,
+          "t": 0,
+          "s": 1
+        },
+        "weight": 3
+      },
+      "right": {
+        "shapes": {
+          "c": 0,
+          "t": 1,
+          "s": 1
+        },
+        "weight": 4
+      }
+    },
+    "ineq_template": "_+s+3>_+s+4",
+    "answer": [
+      "c",
+      "t"
+    ],
+    "explanation": "Since 2c+4=2t+8, circle is 2 lighter than triangle. Cancel s; left adds 3, right adds 4, circle still lighter. So c+s+3>t+s+4.",
+    "reasoned_answer": "c+s+3>t+s+4"
+  },
+  {
+    "id": "difficult-011",
+    "difficulty": "difficult",
+    "equality": {
+      "left": {
+        "shapes": {
+          "c": 2,
+          "s": 0,
+          "t": 0
+        },
+        "weight": 4
+      },
+      "right": {
+        "shapes": {
+          "c": 0,
+          "s": 2,
+          "t": 0
+        },
+        "weight": 12
+      }
+    },
+    "inequality": {
+      "left": {
+        "shapes": {
+          "c": 1,
+          "s": 0,
+          "t": 0
+        },
+        "weight": 0
+      },
+      "right": {
+        "shapes": {
+          "c": 0,
+          "s": 1,
+          "t": 0
+        },
+        "weight": 3
+      }
+    },
+    "ineq_template": "_>_+3",
+    "answer": [
+      "c",
+      "s"
+    ],
+    "explanation": "Since 2c+4=2s+12, circle is 4 lighter than square. So c>s+3.",
+    "reasoned_answer": "c>s+3"
+  },
+  {
+    "id": "difficult-012",
+    "difficulty": "difficult",
+    "equality": {
+      "left": {
+        "shapes": {
+          "t": 1,
+          "c": 0,
+          "s": 0
+        },
+        "weight": 1
+      },
+      "right": {
+        "shapes": {
+          "t": 0,
+          "c": 1,
+          "s": 0
+        },
+        "weight": 4
+      }
+    },
+    "inequality": {
+      "left": {
+        "shapes": {
+          "t": 1,
+          "c": 0,
+          "s": 1
+        },
+        "weight": 3
+      },
+      "right": {
+        "shapes": {
+          "t": 0,
+          "c": 1,
+          "s": 1
+        },
+        "weight": 5
+      }
+    },
+    "ineq_template": "_+s+3>_+s+5",
+    "answer": [
+      "t",
+      "c"
+    ],
+    "explanation": "Since t+1=c+4, triangle is 3 lighter than circle. Cancel s; left adds 3, right adds 5, triangle still lighter. So t+s+3>c+s+5.",
+    "reasoned_answer": "t+s+3>c+s+5"
+  },
+  {
+    "id": "difficult-013",
+    "difficulty": "difficult",
+    "equality": {
+      "left": {
+        "shapes": {
+          "s": 2,
+          "c": 0,
+          "t": 0
+        },
+        "weight": 2
+      },
+      "right": {
+        "shapes": {
+          "s": 0,
+          "c": 2,
+          "t": 0
+        },
+        "weight": 10
+      }
+    },
+    "inequality": {
+      "left": {
+        "shapes": {
+          "s": 1,
+          "c": 0,
+          "t": 1
+        },
+        "weight": 2
+      },
+      "right": {
+        "shapes": {
+          "s": 0,
+          "c": 1,
+          "t": 1
+        },
+        "weight": 5
+      }
+    },
+    "ineq_template": "_+t+2>_+t+5",
+    "answer": [
+      "s",
+      "c"
+    ],
+    "explanation": "Since 2s+2=2c+10, square is 4 lighter than circle. Cancel t; left adds 2, right adds 5, square still lighter. So s+t+2>c+t+5.",
+    "reasoned_answer": "s+t+2>c+t+5"
+  },
+  {
+    "id": "difficult-014",
+    "difficulty": "difficult",
+    "equality": {
+      "left": {
+        "shapes": {
+          "s": 1,
+          "t": 0,
+          "c": 0
+        },
+        "weight": 4
+      },
+      "right": {
+        "shapes": {
+          "s": 0,
+          "t": 1,
+          "c": 0
+        },
+        "weight": 2
+      }
+    },
+    "inequality": {
+      "left": {
+        "shapes": {
+          "s": 0,
+          "t": 1,
+          "c": 1
+        },
+        "weight": 4
+      },
+      "right": {
+        "shapes": {
+          "s": 1,
+          "t": 0,
           "c": 1
         },
         "weight": 5
       }
     },
-    "ineq_template": "_+c+3>_+c+5",
+    "ineq_template": "_+c+4>_+c+5",
     "answer": [
-      "s",
-      "t"
+      "t",
+      "s"
     ],
-    "explanation": "",
-    "reasoned_answer": ""
+    "explanation": "Since s+4=t+2, square is 2 heavier than triangle. Cancel c; left adds 4, right adds 5, triangle still heavier. So t+c+4>s+c+5.",
+    "reasoned_answer": "t+c+4>s+c+5"
+  },
+  {
+    "id": "difficult-015",
+    "difficulty": "difficult",
+    "equality": {
+      "left": {
+        "shapes": {
+          "s": 3,
+          "c": 0,
+          "t": 0
+        },
+        "weight": 15
+      },
+      "right": {
+        "shapes": {
+          "s": 0,
+          "c": 3,
+          "t": 0
+        },
+        "weight": 3
+      }
+    },
+    "inequality": {
+      "left": {
+        "shapes": {
+          "s": 0,
+          "c": 1,
+          "t": 0
+        },
+        "weight": 0
+      },
+      "right": {
+        "shapes": {
+          "s": 1,
+          "c": 0,
+          "t": 0
+        },
+        "weight": 3
+      }
+    },
+    "ineq_template": "_>_+3",
+    "answer": [
+      "c",
+      "s"
+    ],
+    "explanation": "Since 3s+15=3c+3, square is 4 heavier than circle. So c>s+3.",
+    "reasoned_answer": "c>s+3"
   }
 ]

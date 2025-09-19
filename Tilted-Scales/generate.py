@@ -283,7 +283,7 @@ Desired element:
 
 # -------------------- BATCH CALL --------------------
 
-# Build the batch payload array (keep source order via index)
+
 batch_items = []
 for i, (equality_dict, inequality_template, inequality_dict, answer) in enumerate(puzzles, start=1):
     batch_items.append({
@@ -291,14 +291,14 @@ for i, (equality_dict, inequality_template, inequality_dict, answer) in enumerat
         "equality": equality_dict,
         "inequality": inequality_dict,
         "ineq_template": inequality_template,
-        "answer": answer  # LLM will ignore it per prompt
+        "answer": answer 
     })
 
-# Pick batch prompt by difficulty
+
 prompt = (BATCH_PROMPT_EASY(len(batch_items)) if difficulty == "easy"
           else BATCH_PROMPT_DIFFICULT(len(batch_items)))
 
-# Single Claude call with the entire array
+
 batched_prompt = prompt + "\n\nJSON INPUT:\n" + json.dumps({"items": batch_items}, ensure_ascii=False)
 
 explanations = {}  # index -> {"explanation": ..., "reasoned_answer": ...}
@@ -319,13 +319,13 @@ try:
                             "reasoned_answer": (obj.get("reasoned_answer") or "").strip()
                         }
         except Exception:
-            # If JSON parse fails, leave explanations empty; downstream will store raw LLM text if needed
+            
             pass
     else:
-        # Non-zero return; no explanations
+       
         pass
 except Exception:
-    # CLI failure; no explanations
+    
     pass
 
 # Build final items with merged explanations (fallback to empty strings if missing)
@@ -338,8 +338,8 @@ for i, (equality_dict, inequality_template, inequality_dict, answer) in enumerat
         "equality": equality_dict,
         "inequality": inequality_dict,
         "ineq_template": inequality_template,
-        "answer": answer,                    # ground truth from generator
-        "explanation": info["explanation"],  # LLM batch output (as-is)
+        "answer": answer,                   
+        "explanation": info["explanation"], 
         "reasoned_answer": info["reasoned_answer"]
     })
 
