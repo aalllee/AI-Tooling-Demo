@@ -7,16 +7,7 @@ Single entry point: `generate.py`.
  
 ## What this does
  
-- **Generates** a JSON array of practice puzzles for two difficulties:
-- **easy** 
-- **difficult** 
-- **Batches one LLM call** (Claude CLI) for all items to produce, per item:
-- `explanation` — **≤ 2 short sentences**, why the solution is correct?.
-- `reasoned_answer` — the **filled inequality string** the LLM derives **on its own** (no spaces).
- 
-The output is **UI-ready**: the **top (balanced)** scale comes from `equality`, the **bottom tipped (unsolved)** scale from `ineq_template`, and `answer` holds the ground-truth variable order for the two blanks.
- 
-
+- **Generates** a JSON array of practice puzzles
  
 ## Quick start
 
@@ -50,19 +41,7 @@ python generate.py 200 difficult data/difficult.json
 ### Shapes & terms
 - Shapes: `s` = square, `t` = triangle, `c` = circle.  
 - A pan (left/right) is `{ "shapes": {"s": INT, "t": INT, "c": INT}, "weight": INT }`.
- 
-### Equality (balanced top scale)
-- **Proportional**: `k1*X = k2*Y` (no fixed weights).  
-   “Needing fewer copies” ⇒ **heavier per unit**.
-- **Equal-k weighted**: `k*X + wL = k*Y + wR`.  
-  **Heavier added weight** ⇒ that side’s **unit shape is lighter**.
- 
-### Inequality (tipped bottom scale)
-- Rendered via `ineq_template` with **two `_` blanks** (left, right).  
-  Template may include literal add-ons like `+c`, `+t`, `+3`, etc.  
-- `answer = ["X","Y"]` is the **true** variable order to fill the blanks (left→right).  
-- The LLM **ignores** `answer` and derives its own `reasoned_answer`. You can later compare them in a validator.
- 
+
 ---
  
 ## Output format (schema)
