@@ -3,9 +3,7 @@
 LLM generator for building linear equation problems of the form p = m × x (price = unit-price × quantity), with batched LLM explanations.
 Single entry point: `generate.py`
 
-## What this does
-
-### Generates a JSON array of UI-ready practice problems:
+Generates an array of UI ready practice problems in the same visual style as examples
 
 ## Quick start
 

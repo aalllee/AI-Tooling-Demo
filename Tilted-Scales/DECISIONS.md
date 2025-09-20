@@ -1,11 +1,9 @@
 # DECISIONS.md
 
-Key trade-offs for the Tilted-Scales puzzle generator.
-
 ---
 
 ## 1) Procedural generation vs. model-led generation
-**Decision:** All puzzle logic (equations, templates, answers) is **procedurally generated**; the LLM is used only for short explanations (when the user presses "WHY?" button).
+**Decision:** All puzzle logic (equations, templates, answers) is procedurally generated; the LLM is used only for short explanations (when the user presses "WHY?" button).
 
 - **Pros**
   - Deterministic math games - correctness validated by construction.
@@ -51,6 +49,6 @@ Key trade-offs for the Tilted-Scales puzzle generator.
 ---
 
 ## Summary
-- **For this puzzle i found that having procedural functions will significantly minimize error rate.**, so **no extensive validation** is needed for equations or answers.
+- **For this puzzle I found that having procedural functions will significantly minimize error rate.**, so **no extensive validation** is needed for equations or answers.
 - **this method generates over 1k unique problems**
 - **Only need to check if the LLM explanations make sense**

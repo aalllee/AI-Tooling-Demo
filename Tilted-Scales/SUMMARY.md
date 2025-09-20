@@ -4,8 +4,6 @@ Procedural generator for “balanced vs. tipped scale” logic puzzles with **ba
 Single entry point: `generate.py`.
  
  
-## What this does
- 
 - **Generates** a JSON array of practice puzzles
  
 ## Quick start
@@ -19,14 +17,6 @@ python generate.py 200 easy data/easy.json
 #Create 200 difficult puzzles
 python generate.py 200 difficult data/difficult.json
 ```
-
-**CLI**
-
-| Arg          | Type | Values                 | Meaning                                   |
-|--------------|------|------------------------|-------------------------------------------|
-| `count`      | int  | 1–200                  | Number of puzzles to generate             |
-| `difficulty` | str  | `easy` \| `difficult`  | Generator family                          |
-| `out_path`   | str  | e.g., `data/easy.json` | Output file (parent directories created)  |
  
 **Prereqs**
 
@@ -34,16 +24,14 @@ python generate.py 200 difficult data/difficult.json
 - Claude CLI on `PATH` as `claude`.
  
 ---
- 
-## How generation works (logic)
- 
+  
 ### Shapes & terms
 - Shapes: `s` = square, `t` = triangle, `c` = circle.  
 - A pan (left/right) is `{ "shapes": {"s": INT, "t": INT, "c": INT}, "weight": INT }`.
 
 ---
  
-## Output format (schema)
+## Output format 
  
 Each element of the output array:
  
