@@ -140,26 +140,29 @@ Each element of the output array:
 
 ```json
 {
-    "id": "difficult-004",
+    "id": "difficult-010",
     "difficulty": "difficult",
     "equality": {
-      "left": {"shapes": {"t": 3,"s": 0,"c": 0}, "weight": 3},
-      "right": {"shapes": {"t": 0, "s": 3, "c": 0}, "weight": 12}
+      "left": {"shapes": {"c": 2,"t": 0,"s": 0}, "weight": 4},
+      "right": {"shapes": {"c": 0,"t": 2,"s": 0},"weight": 8}
     },
     "inequality": {
-      "left": { "shapes": { "t": 1, "s": 0, "c": 1 }, "weight": 2},
-      "right": { "shapes": { "t": 0, "s": 1, "c": 1 }, "weight": 4}
+      "left": {"shapes": {"c": 1, "t": 0,"s": 1}, "weight": 3},
+      "right": {"shapes": {"c": 0,"t": 1,"s": 1}, "weight": 4}
     },
-    "ineq_template": "_+c+2>_+c+4",
-    "answer": ["t","s"],
-    "explanation": "",
-    "reasoned_answer": ""
-  }
+    "ineq_template": "_+s+3>_+s+4",
+    "answer": [
+      "c",
+      "t"
+    ],
+    "explanation": "Since 2c+4=2t+8, circle is 2 lighter than triangle. Cancel s; left adds 3, right adds 4, circle still lighter. So c+s+3>t+s+4.",
+    "reasoned_answer": "c+s+3>t+s+4"
+  },
 ```
 
-- equality: `3*t+3 = 3*s+12`
-- inequality: `t+c+2 > s+c+4`
+- equality: `2*c+4 = 2*t+8`
+- inequality: `c+s+3 > t+c+4`
 - inequality_template: `_+c+2>_+c+4`
-- answer: `t (left), s (right)`
+- answer: `c (left), t (right)`
 
 

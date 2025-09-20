@@ -8,11 +8,11 @@ Key trade-offs for the Tilted-Scales puzzle generator.
 **Decision:** All puzzle logic (equations, templates, answers) is **procedurally generated**; the LLM is used only for short explanations (when the user presses "WHY?" button).
 
 - **Pros**
-  - Deterministic math → minimal validation for correctness.
-  - Guaranteed solvability; easy to scale and control coverage.
+  - Deterministic math games - correctness validated by construction.
+  - Guaranteed solvability and vast variation; easy to scale and a wide combinatiorial range.
 - **Cons**
-  - Variety limited to implemented patterns.
-  - Adding new puzzle families requires code changes.
+  - Need to implement new helper functions for each puzzle template (it is still pretty fast).
+
 
 ---
 
@@ -33,23 +33,24 @@ Key trade-offs for the Tilted-Scales puzzle generator.
 - **Pros**
   - UI can render the **top balanced** scale from `equality`.
   - UI can render the **unsolved bottom** from `ineq_template`.
-  - `inequality` mirrors the **solved** state; `answer` supplies the draggable tokens.
+  - `inequality` dict represents the **solved** state; `answer` supplies the draggable tokens.
 - **Cons**
-  - Slight redundancy (template + solved dict + answer).
+  - Slight redundancy (template + solved dict + answer) can be fixed with a more compact UI representation.
 ---
 
 ## 4) Randomness vs. reproducibility
-**Decision:** Use `random` ranges for breadth; allow optional seeding.
+**Decision:** Use `random` ranges for breadth
 
 - **Pros**
   - High variety across runs with no extra work.
   - Easy to widen ranges to expand coverage.
+  - Guarantees integer values after equality simplification
 - **Cons**
-  - Non-deterministic by default (hard to diff).
-  - Needs a seed for reproducible CI.
+  - Needs a seed for reproducible puzzles.
 
 ---
 
 ## Summary
-- **Most logic is procedural and deterministic**, so **no extensive validation** is needed for equations or answers.
-- **Only validate the LLM output**: ensure `reasoned_answer` matches the true solution (filled from `answer` + `ineq_template`).
+- **For this puzzle i found that having procedural functions will significantly minimize error rate.**, so **no extensive validation** is needed for equations or answers.
+- **this method generates over 1k unique problems**
+- **Only need to check if the LLM explanations make sense**

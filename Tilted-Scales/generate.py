@@ -301,7 +301,7 @@ prompt = (BATCH_PROMPT_EASY(len(batch_items)) if difficulty == "easy"
 
 batched_prompt = prompt + "\n\nJSON INPUT:\n" + json.dumps({"items": batch_items}, ensure_ascii=False)
 
-explanations = {}  # index -> {"explanation": ..., "reasoned_answer": ...}
+explanations = {}  
 try:
     res = subprocess.run(
         ["claude", "-p", "--output-format", "text", batched_prompt],
@@ -343,7 +343,7 @@ for i, (equality_dict, inequality_template, inequality_dict, answer) in enumerat
         "reasoned_answer": info["reasoned_answer"]
     })
 
-# -------------------- WRITE --------------------
+# -------------------- OUTPUT --------------------
 with tempfile.NamedTemporaryFile("w", encoding="utf-8", delete=False, dir=str(path.parent)) as tf:
     tmp = tf.name
     json.dump(items, tf, ensure_ascii=False, indent=2)
