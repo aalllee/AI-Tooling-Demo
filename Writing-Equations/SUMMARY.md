@@ -5,21 +5,7 @@ Single entry point: `generate.py`
 
 ## What this does
 
-### Generates a JSON array of UI-ready practice problems in the same visual pattern:
-
-- short prompt,
-
-- small rate/amount/total table,
-
-- clean graph (five ticks per axis) of the line p = m·x,
-
-- equation template with two blanks (two orientations),
-
-- drag tokens (incl. optional distractor constants),
-
-- answers (both valid orientations),
-
-- short explanation
+### Generates a JSON array of UI-ready practice problems:
 
 ## Quick start
 
@@ -45,9 +31,9 @@ python generate.py 200 output/problems.json
 
 - Always price on the y-axis: p (unit $).
 
-- Choose one x-mode per item: (kg, L, ...)
+- Choose one x-var per generated item: (kg, L, ...)
 
-- Rate (slope) m is the unit price (integer 1–20).
+- Slope m is the unit price (integer 1–20).
 
 - Table: unit_price ($m/x_unit), amount (x), total ($m·x).
 
@@ -109,7 +95,7 @@ Each element of the output array in JSON
 
 # Fields and UI mapping
 
-- id → unique puzzle id
+- id → unique item id
 
 - stem → Initial prompt / question
 
