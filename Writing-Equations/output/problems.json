@@ -1,0 +1,1542 @@
+[
+  {
+    "id": "lin-001",
+    "stem": {
+      "prompt_text": "Create an equation that relates the price p and the weight w. Bananas cost $4 per kilogram.",
+      "context": {
+        "y_var": "p",
+        "y_name": "price",
+        "y_unit": "$",
+        "x_var": "w",
+        "x_name": "weight",
+        "x_unit": "kg",
+        "x_unit_label": "kg",
+        "item_name": "bananas",
+        "slope_m": 4
+      }
+    },
+    "table": {
+      "unit_price": {
+        "value": 4,
+        "display": "$4.00/kg"
+      },
+      "amount": {
+        "value": 3,
+        "display": "3 kg"
+      },
+      "total": {
+        "value": 12,
+        "display": "$12.00"
+      }
+    },
+    "graph": {
+      "x_axis": {
+        "label": "weight (kg)",
+        "ticks": [
+          2,
+          4,
+          6,
+          8,
+          10
+        ]
+      },
+      "y_axis": {
+        "label": "price ($)",
+        "ticks": [
+          8,
+          16,
+          24,
+          32,
+          40
+        ]
+      },
+      "line_points": [
+        [
+          0,
+          0
+        ],
+        [
+          10,
+          40
+        ]
+      ]
+    },
+    "equation_template": "_ = _ * _",
+    "tokens": [
+      {
+        "type": "const",
+        "label": "4",
+        "value": 4
+      },
+      {
+        "type": "var",
+        "label": "p"
+      },
+      {
+        "type": "var",
+        "label": "w"
+      },
+      {
+        "type": "const",
+        "label": "7",
+        "value": 7
+      }
+    ],
+    "answers": {
+      "valid_fills": [
+        [
+          "p",
+          "4",
+          "w"
+        ],
+        [
+          "p",
+          "w",
+          "4"
+        ]
+      ],
+      "canonical_str": "p=4*w"
+    },
+    "explanation": {
+      "equation_str": "p=4×w",
+      "text": "Get price p by multiplying weight w by $4 per kg."
+    }
+  },
+  {
+    "id": "lin-002",
+    "stem": {
+      "prompt_text": "Create an equation that relates the price p and the volume v. Orange juice costs $6 per liter.",
+      "context": {
+        "y_var": "p",
+        "y_name": "price",
+        "y_unit": "$",
+        "x_var": "v",
+        "x_name": "volume",
+        "x_unit": "L",
+        "x_unit_label": "L",
+        "item_name": "orange juice",
+        "slope_m": 6
+      }
+    },
+    "table": {
+      "unit_price": {
+        "value": 6,
+        "display": "$6.00/L"
+      },
+      "amount": {
+        "value": 2,
+        "display": "2 L"
+      },
+      "total": {
+        "value": 12,
+        "display": "$12.00"
+      }
+    },
+    "graph": {
+      "x_axis": {
+        "label": "volume (L)",
+        "ticks": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "y_axis": {
+        "label": "price ($)",
+        "ticks": [
+          6,
+          12,
+          18,
+          24,
+          30
+        ]
+      },
+      "line_points": [
+        [
+          0,
+          0
+        ],
+        [
+          5,
+          30
+        ]
+      ]
+    },
+    "equation_template": "_ * _ = _",
+    "tokens": [
+      {
+        "type": "const",
+        "label": "6",
+        "value": 6
+      },
+      {
+        "type": "var",
+        "label": "p"
+      },
+      {
+        "type": "var",
+        "label": "v"
+      }
+    ],
+    "answers": {
+      "valid_fills": [
+        [
+          "6",
+          "v",
+          "p"
+        ],
+        [
+          "v",
+          "6",
+          "p"
+        ]
+      ],
+      "canonical_str": "p=6*v"
+    },
+    "explanation": {
+      "equation_str": "p=6×v",
+      "text": "Get price p by multiplying volume v by $6 per L."
+    }
+  },
+  {
+    "id": "lin-003",
+    "stem": {
+      "prompt_text": "Create an equation that relates the price p and the items n. Screws cost $2 per item.",
+      "context": {
+        "y_var": "p",
+        "y_name": "price",
+        "y_unit": "$",
+        "x_var": "n",
+        "x_name": "items",
+        "x_unit": "pcs",
+        "x_unit_label": "pc",
+        "item_name": "screws",
+        "slope_m": 2
+      }
+    },
+    "table": {
+      "unit_price": {
+        "value": 2,
+        "display": "$2.00/pc"
+      },
+      "amount": {
+        "value": 8,
+        "display": "8 pcs"
+      },
+      "total": {
+        "value": 16,
+        "display": "$16.00"
+      }
+    },
+    "graph": {
+      "x_axis": {
+        "label": "items (pcs)",
+        "ticks": [
+          5,
+          10,
+          15,
+          20,
+          25
+        ]
+      },
+      "y_axis": {
+        "label": "price ($)",
+        "ticks": [
+          10,
+          20,
+          30,
+          40,
+          50
+        ]
+      },
+      "line_points": [
+        [
+          0,
+          0
+        ],
+        [
+          25,
+          50
+        ]
+      ]
+    },
+    "equation_template": "_ = _ * _",
+    "tokens": [
+      {
+        "type": "const",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "type": "var",
+        "label": "p"
+      },
+      {
+        "type": "var",
+        "label": "n"
+      },
+      {
+        "type": "const",
+        "label": "5",
+        "value": 5
+      },
+      {
+        "type": "const",
+        "label": "9",
+        "value": 9
+      }
+    ],
+    "answers": {
+      "valid_fills": [
+        [
+          "p",
+          "2",
+          "n"
+        ],
+        [
+          "p",
+          "n",
+          "2"
+        ]
+      ],
+      "canonical_str": "p=2*n"
+    },
+    "explanation": {
+      "equation_str": "p=2×n",
+      "text": "Get price p by multiplying items n by $2 per pc."
+    }
+  },
+  {
+    "id": "lin-004",
+    "stem": {
+      "prompt_text": "Create an equation that relates the price p and the weight w. Rice costs $12 per kilogram.",
+      "context": {
+        "y_var": "p",
+        "y_name": "price",
+        "y_unit": "$",
+        "x_var": "w",
+        "x_name": "weight",
+        "x_unit": "kg",
+        "x_unit_label": "kg",
+        "item_name": "rice",
+        "slope_m": 12
+      }
+    },
+    "table": {
+      "unit_price": {
+        "value": 12,
+        "display": "$12.00/kg"
+      },
+      "amount": {
+        "value": 2,
+        "display": "2 kg"
+      },
+      "total": {
+        "value": 24,
+        "display": "$24.00"
+      }
+    },
+    "graph": {
+      "x_axis": {
+        "label": "weight (kg)",
+        "ticks": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "y_axis": {
+        "label": "price ($)",
+        "ticks": [
+          12,
+          24,
+          36,
+          48,
+          60
+        ]
+      },
+      "line_points": [
+        [
+          0,
+          0
+        ],
+        [
+          5,
+          60
+        ]
+      ]
+    },
+    "equation_template": "_ * _ = _",
+    "tokens": [
+      {
+        "type": "const",
+        "label": "12",
+        "value": 12
+      },
+      {
+        "type": "var",
+        "label": "p"
+      },
+      {
+        "type": "var",
+        "label": "w"
+      },
+      {
+        "type": "const",
+        "label": "8",
+        "value": 8
+      }
+    ],
+    "answers": {
+      "valid_fills": [
+        [
+          "12",
+          "w",
+          "p"
+        ],
+        [
+          "w",
+          "12",
+          "p"
+        ]
+      ],
+      "canonical_str": "p=12*w"
+    },
+    "explanation": {
+      "equation_str": "p=12×w",
+      "text": "Get price p by multiplying weight w by $12 per kg."
+    }
+  },
+  {
+    "id": "lin-005",
+    "stem": {
+      "prompt_text": "Create an equation that relates the price p and the volume v. Milk costs $3 per liter.",
+      "context": {
+        "y_var": "p",
+        "y_name": "price",
+        "y_unit": "$",
+        "x_var": "v",
+        "x_name": "volume",
+        "x_unit": "L",
+        "x_unit_label": "L",
+        "item_name": "milk",
+        "slope_m": 3
+      }
+    },
+    "table": {
+      "unit_price": {
+        "value": 3,
+        "display": "$3.00/L"
+      },
+      "amount": {
+        "value": 4,
+        "display": "4 L"
+      },
+      "total": {
+        "value": 12,
+        "display": "$12.00"
+      }
+    },
+    "graph": {
+      "x_axis": {
+        "label": "volume (L)",
+        "ticks": [
+          2,
+          4,
+          6,
+          8,
+          10
+        ]
+      },
+      "y_axis": {
+        "label": "price ($)",
+        "ticks": [
+          6,
+          12,
+          18,
+          24,
+          30
+        ]
+      },
+      "line_points": [
+        [
+          0,
+          0
+        ],
+        [
+          10,
+          30
+        ]
+      ]
+    },
+    "equation_template": "_ = _ * _",
+    "tokens": [
+      {
+        "type": "const",
+        "label": "3",
+        "value": 3
+      },
+      {
+        "type": "var",
+        "label": "p"
+      },
+      {
+        "type": "var",
+        "label": "v"
+      }
+    ],
+    "answers": {
+      "valid_fills": [
+        [
+          "p",
+          "3",
+          "v"
+        ],
+        [
+          "p",
+          "v",
+          "3"
+        ]
+      ],
+      "canonical_str": "p=3*v"
+    },
+    "explanation": {
+      "equation_str": "p=3×v",
+      "text": "Get price p by multiplying volume v by $3 per L."
+    }
+  },
+  {
+    "id": "lin-006",
+    "stem": {
+      "prompt_text": "Create an equation that relates the price p and the items n. Pencils cost $1 per item.",
+      "context": {
+        "y_var": "p",
+        "y_name": "price",
+        "y_unit": "$",
+        "x_var": "n",
+        "x_name": "items",
+        "x_unit": "pcs",
+        "x_unit_label": "pc",
+        "item_name": "pencils",
+        "slope_m": 1
+      }
+    },
+    "table": {
+      "unit_price": {
+        "value": 1,
+        "display": "$1.00/pc"
+      },
+      "amount": {
+        "value": 10,
+        "display": "10 pcs"
+      },
+      "total": {
+        "value": 10,
+        "display": "$10.00"
+      }
+    },
+    "graph": {
+      "x_axis": {
+        "label": "items (pcs)",
+        "ticks": [
+          5,
+          10,
+          15,
+          20,
+          25
+        ]
+      },
+      "y_axis": {
+        "label": "price ($)",
+        "ticks": [
+          5,
+          10,
+          15,
+          20,
+          25
+        ]
+      },
+      "line_points": [
+        [
+          0,
+          0
+        ],
+        [
+          25,
+          25
+        ]
+      ]
+    },
+    "equation_template": "_ * _ = _",
+    "tokens": [
+      {
+        "type": "const",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "type": "var",
+        "label": "p"
+      },
+      {
+        "type": "var",
+        "label": "n"
+      },
+      {
+        "type": "const",
+        "label": "4",
+        "value": 4
+      }
+    ],
+    "answers": {
+      "valid_fills": [
+        [
+          "1",
+          "n",
+          "p"
+        ],
+        [
+          "n",
+          "1",
+          "p"
+        ]
+      ],
+      "canonical_str": "p=1*n"
+    },
+    "explanation": {
+      "equation_str": "p=1×n",
+      "text": "Get price p by multiplying items n by $1 per pc."
+    }
+  },
+  {
+    "id": "lin-007",
+    "stem": {
+      "prompt_text": "Create an equation that relates the price p and the weight w. Cheese costs $15 per kilogram.",
+      "context": {
+        "y_var": "p",
+        "y_name": "price",
+        "y_unit": "$",
+        "x_var": "w",
+        "x_name": "weight",
+        "x_unit": "kg",
+        "x_unit_label": "kg",
+        "item_name": "cheese",
+        "slope_m": 15
+      }
+    },
+    "table": {
+      "unit_price": {
+        "value": 15,
+        "display": "$15.00/kg"
+      },
+      "amount": {
+        "value": 1,
+        "display": "1 kg"
+      },
+      "total": {
+        "value": 15,
+        "display": "$15.00"
+      }
+    },
+    "graph": {
+      "x_axis": {
+        "label": "weight (kg)",
+        "ticks": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "y_axis": {
+        "label": "price ($)",
+        "ticks": [
+          15,
+          30,
+          45,
+          60,
+          75
+        ]
+      },
+      "line_points": [
+        [
+          0,
+          0
+        ],
+        [
+          5,
+          75
+        ]
+      ]
+    },
+    "equation_template": "_ = _ * _",
+    "tokens": [
+      {
+        "type": "const",
+        "label": "15",
+        "value": 15
+      },
+      {
+        "type": "var",
+        "label": "p"
+      },
+      {
+        "type": "var",
+        "label": "w"
+      },
+      {
+        "type": "const",
+        "label": "10",
+        "value": 10
+      },
+      {
+        "type": "const",
+        "label": "6",
+        "value": 6
+      }
+    ],
+    "answers": {
+      "valid_fills": [
+        [
+          "p",
+          "15",
+          "w"
+        ],
+        [
+          "p",
+          "w",
+          "15"
+        ]
+      ],
+      "canonical_str": "p=15*w"
+    },
+    "explanation": {
+      "equation_str": "p=15×w",
+      "text": "Get price p by multiplying weight w by $15 per kg."
+    }
+  },
+  {
+    "id": "lin-008",
+    "stem": {
+      "prompt_text": "Create an equation that relates the price p and the volume v. Water costs $2 per liter.",
+      "context": {
+        "y_var": "p",
+        "y_name": "price",
+        "y_unit": "$",
+        "x_var": "v",
+        "x_name": "volume",
+        "x_unit": "L",
+        "x_unit_label": "L",
+        "item_name": "water",
+        "slope_m": 2
+      }
+    },
+    "table": {
+      "unit_price": {
+        "value": 2,
+        "display": "$2.00/L"
+      },
+      "amount": {
+        "value": 6,
+        "display": "6 L"
+      },
+      "total": {
+        "value": 12,
+        "display": "$12.00"
+      }
+    },
+    "graph": {
+      "x_axis": {
+        "label": "volume (L)",
+        "ticks": [
+          3,
+          6,
+          9,
+          12,
+          15
+        ]
+      },
+      "y_axis": {
+        "label": "price ($)",
+        "ticks": [
+          6,
+          12,
+          18,
+          24,
+          30
+        ]
+      },
+      "line_points": [
+        [
+          0,
+          0
+        ],
+        [
+          15,
+          30
+        ]
+      ]
+    },
+    "equation_template": "_ * _ = _",
+    "tokens": [
+      {
+        "type": "const",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "type": "var",
+        "label": "p"
+      },
+      {
+        "type": "var",
+        "label": "v"
+      },
+      {
+        "type": "const",
+        "label": "7",
+        "value": 7
+      }
+    ],
+    "answers": {
+      "valid_fills": [
+        [
+          "2",
+          "v",
+          "p"
+        ],
+        [
+          "v",
+          "2",
+          "p"
+        ]
+      ],
+      "canonical_str": "p=2*v"
+    },
+    "explanation": {
+      "equation_str": "p=2×v",
+      "text": "Get price p by multiplying volume v by $2 per L."
+    }
+  },
+  {
+    "id": "lin-009",
+    "stem": {
+      "prompt_text": "Create an equation that relates the price p and the items n. Canned beans cost $5 per item.",
+      "context": {
+        "y_var": "p",
+        "y_name": "price",
+        "y_unit": "$",
+        "x_var": "n",
+        "x_name": "items",
+        "x_unit": "pcs",
+        "x_unit_label": "pc",
+        "item_name": "canned beans",
+        "slope_m": 5
+      }
+    },
+    "table": {
+      "unit_price": {
+        "value": 5,
+        "display": "$5.00/pc"
+      },
+      "amount": {
+        "value": 3,
+        "display": "3 pcs"
+      },
+      "total": {
+        "value": 15,
+        "display": "$15.00"
+      }
+    },
+    "graph": {
+      "x_axis": {
+        "label": "items (pcs)",
+        "ticks": [
+          2,
+          4,
+          6,
+          8,
+          10
+        ]
+      },
+      "y_axis": {
+        "label": "price ($)",
+        "ticks": [
+          10,
+          20,
+          30,
+          40,
+          50
+        ]
+      },
+      "line_points": [
+        [
+          0,
+          0
+        ],
+        [
+          10,
+          50
+        ]
+      ]
+    },
+    "equation_template": "_ = _ * _",
+    "tokens": [
+      {
+        "type": "const",
+        "label": "5",
+        "value": 5
+      },
+      {
+        "type": "var",
+        "label": "p"
+      },
+      {
+        "type": "var",
+        "label": "n"
+      }
+    ],
+    "answers": {
+      "valid_fills": [
+        [
+          "p",
+          "5",
+          "n"
+        ],
+        [
+          "p",
+          "n",
+          "5"
+        ]
+      ],
+      "canonical_str": "p=5*n"
+    },
+    "explanation": {
+      "equation_str": "p=5×n",
+      "text": "Get price p by multiplying items n by $5 per pc."
+    }
+  },
+  {
+    "id": "lin-010",
+    "stem": {
+      "prompt_text": "Create an equation that relates the price p and the weight w. Coffee costs $20 per kilogram.",
+      "context": {
+        "y_var": "p",
+        "y_name": "price",
+        "y_unit": "$",
+        "x_var": "w",
+        "x_name": "weight",
+        "x_unit": "kg",
+        "x_unit_label": "kg",
+        "item_name": "coffee",
+        "slope_m": 20
+      }
+    },
+    "table": {
+      "unit_price": {
+        "value": 20,
+        "display": "$20.00/kg"
+      },
+      "amount": {
+        "value": 2,
+        "display": "2 kg"
+      },
+      "total": {
+        "value": 40,
+        "display": "$40.00"
+      }
+    },
+    "graph": {
+      "x_axis": {
+        "label": "weight (kg)",
+        "ticks": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "y_axis": {
+        "label": "price ($)",
+        "ticks": [
+          20,
+          40,
+          60,
+          80,
+          100
+        ]
+      },
+      "line_points": [
+        [
+          0,
+          0
+        ],
+        [
+          5,
+          100
+        ]
+      ]
+    },
+    "equation_template": "_ * _ = _",
+    "tokens": [
+      {
+        "type": "const",
+        "label": "20",
+        "value": 20
+      },
+      {
+        "type": "var",
+        "label": "p"
+      },
+      {
+        "type": "var",
+        "label": "w"
+      },
+      {
+        "type": "const",
+        "label": "12",
+        "value": 12
+      }
+    ],
+    "answers": {
+      "valid_fills": [
+        [
+          "20",
+          "w",
+          "p"
+        ],
+        [
+          "w",
+          "20",
+          "p"
+        ]
+      ],
+      "canonical_str": "p=20*w"
+    },
+    "explanation": {
+      "equation_str": "p=20×w",
+      "text": "Get price p by multiplying weight w by $20 per kg."
+    }
+  },
+  {
+    "id": "lin-011",
+    "stem": {
+      "prompt_text": "Create an equation that relates the price p and the volume v. Yogurt costs $4 per liter.",
+      "context": {
+        "y_var": "p",
+        "y_name": "price",
+        "y_unit": "$",
+        "x_var": "v",
+        "x_name": "volume",
+        "x_unit": "L",
+        "x_unit_label": "L",
+        "item_name": "yogurt",
+        "slope_m": 4
+      }
+    },
+    "table": {
+      "unit_price": {
+        "value": 4,
+        "display": "$4.00/L"
+      },
+      "amount": {
+        "value": 3,
+        "display": "3 L"
+      },
+      "total": {
+        "value": 12,
+        "display": "$12.00"
+      }
+    },
+    "graph": {
+      "x_axis": {
+        "label": "volume (L)",
+        "ticks": [
+          2,
+          4,
+          6,
+          8,
+          10
+        ]
+      },
+      "y_axis": {
+        "label": "price ($)",
+        "ticks": [
+          8,
+          16,
+          24,
+          32,
+          40
+        ]
+      },
+      "line_points": [
+        [
+          0,
+          0
+        ],
+        [
+          10,
+          40
+        ]
+      ]
+    },
+    "equation_template": "_ = _ * _",
+    "tokens": [
+      {
+        "type": "const",
+        "label": "4",
+        "value": 4
+      },
+      {
+        "type": "var",
+        "label": "p"
+      },
+      {
+        "type": "var",
+        "label": "v"
+      },
+      {
+        "type": "const",
+        "label": "9",
+        "value": 9
+      }
+    ],
+    "answers": {
+      "valid_fills": [
+        [
+          "p",
+          "4",
+          "v"
+        ],
+        [
+          "p",
+          "v",
+          "4"
+        ]
+      ],
+      "canonical_str": "p=4*v"
+    },
+    "explanation": {
+      "equation_str": "p=4×v",
+      "text": "Get price p by multiplying volume v by $4 per L."
+    }
+  },
+  {
+    "id": "lin-012",
+    "stem": {
+      "prompt_text": "Create an equation that relates the price p and the weight w. Potatoes cost $3 per kilogram.",
+      "context": {
+        "y_var": "p",
+        "y_name": "price",
+        "y_unit": "$",
+        "x_var": "w",
+        "x_name": "weight",
+        "x_unit": "kg",
+        "x_unit_label": "kg",
+        "item_name": "potatoes",
+        "slope_m": 3
+      }
+    },
+    "table": {
+      "unit_price": {
+        "value": 3,
+        "display": "$3.00/kg"
+      },
+      "amount": {
+        "value": 5,
+        "display": "5 kg"
+      },
+      "total": {
+        "value": 15,
+        "display": "$15.00"
+      }
+    },
+    "graph": {
+      "x_axis": {
+        "label": "weight (kg)",
+        "ticks": [
+          2,
+          4,
+          6,
+          8,
+          10
+        ]
+      },
+      "y_axis": {
+        "label": "price ($)",
+        "ticks": [
+          6,
+          12,
+          18,
+          24,
+          30
+        ]
+      },
+      "line_points": [
+        [
+          0,
+          0
+        ],
+        [
+          10,
+          30
+        ]
+      ]
+    },
+    "equation_template": "_ * _ = _",
+    "tokens": [
+      {
+        "type": "const",
+        "label": "3",
+        "value": 3
+      },
+      {
+        "type": "var",
+        "label": "p"
+      },
+      {
+        "type": "var",
+        "label": "w"
+      },
+      {
+        "type": "const",
+        "label": "11",
+        "value": 11
+      }
+    ],
+    "answers": {
+      "valid_fills": [
+        [
+          "3",
+          "w",
+          "p"
+        ],
+        [
+          "w",
+          "3",
+          "p"
+        ]
+      ],
+      "canonical_str": "p=3*w"
+    },
+    "explanation": {
+      "equation_str": "p=3×w",
+      "text": "Get price p by multiplying weight w by $3 per kg."
+    }
+  },
+  {
+    "id": "lin-013",
+    "stem": {
+      "prompt_text": "Create an equation that relates the price p and the volume v. Apple juice costs $7 per liter.",
+      "context": {
+        "y_var": "p",
+        "y_name": "price",
+        "y_unit": "$",
+        "x_var": "v",
+        "x_name": "volume",
+        "x_unit": "L",
+        "x_unit_label": "L",
+        "item_name": "apple juice",
+        "slope_m": 7
+      }
+    },
+    "table": {
+      "unit_price": {
+        "value": 7,
+        "display": "$7.00/L"
+      },
+      "amount": {
+        "value": 2,
+        "display": "2 L"
+      },
+      "total": {
+        "value": 14,
+        "display": "$14.00"
+      }
+    },
+    "graph": {
+      "x_axis": {
+        "label": "volume (L)",
+        "ticks": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "y_axis": {
+        "label": "price ($)",
+        "ticks": [
+          7,
+          14,
+          21,
+          28,
+          35
+        ]
+      },
+      "line_points": [
+        [
+          0,
+          0
+        ],
+        [
+          5,
+          35
+        ]
+      ]
+    },
+    "equation_template": "_ = _ * _",
+    "tokens": [
+      {
+        "type": "const",
+        "label": "7",
+        "value": 7
+      },
+      {
+        "type": "var",
+        "label": "p"
+      },
+      {
+        "type": "var",
+        "label": "v"
+      },
+      {
+        "type": "const",
+        "label": "3",
+        "value": 3
+      },
+      {
+        "type": "const",
+        "label": "14",
+        "value": 14
+      }
+    ],
+    "answers": {
+      "valid_fills": [
+        [
+          "p",
+          "7",
+          "v"
+        ],
+        [
+          "p",
+          "v",
+          "7"
+        ]
+      ],
+      "canonical_str": "p=7*v"
+    },
+    "explanation": {
+      "equation_str": "p=7×v",
+      "text": "Get price p by multiplying volume v by $7 per L."
+    }
+  },
+  {
+    "id": "lin-014",
+    "stem": {
+      "prompt_text": "Create an equation that relates the price p and the weight w. Sugar costs $8 per kilogram.",
+      "context": {
+        "y_var": "p",
+        "y_name": "price",
+        "y_unit": "$",
+        "x_var": "w",
+        "x_name": "weight",
+        "x_unit": "kg",
+        "x_unit_label": "kg",
+        "item_name": "sugar",
+        "slope_m": 8
+      }
+    },
+    "table": {
+      "unit_price": {
+        "value": 8,
+        "display": "$8.00/kg"
+      },
+      "amount": {
+        "value": 4,
+        "display": "4 kg"
+      },
+      "total": {
+        "value": 32,
+        "display": "$32.00"
+      }
+    },
+    "graph": {
+      "x_axis": {
+        "label": "weight (kg)",
+        "ticks": [
+          2,
+          4,
+          6,
+          8,
+          10
+        ]
+      },
+      "y_axis": {
+        "label": "price ($)",
+        "ticks": [
+          16,
+          32,
+          48,
+          64,
+          80
+        ]
+      },
+      "line_points": [
+        [
+          0,
+          0
+        ],
+        [
+          10,
+          80
+        ]
+      ]
+    },
+    "equation_template": "_ = _ * _",
+    "tokens": [
+      {
+        "type": "const",
+        "label": "8",
+        "value": 8
+      },
+      {
+        "type": "var",
+        "label": "p"
+      },
+      {
+        "type": "var",
+        "label": "w"
+      }
+    ],
+    "answers": {
+      "valid_fills": [
+        [
+          "p",
+          "8",
+          "w"
+        ],
+        [
+          "p",
+          "w",
+          "8"
+        ]
+      ],
+      "canonical_str": "p=8*w"
+    },
+    "explanation": {
+      "equation_str": "p=8×w",
+      "text": "Get price p by multiplying weight w by $8 per kg."
+    }
+  },
+  {
+    "id": "lin-015",
+    "stem": {
+      "prompt_text": "Create an equation that relates the price p and the weight w. Flour costs $6 per kilogram.",
+      "context": {
+        "y_var": "p",
+        "y_name": "price",
+        "y_unit": "$",
+        "x_var": "w",
+        "x_name": "weight",
+        "x_unit": "kg",
+        "x_unit_label": "kg",
+        "item_name": "flour",
+        "slope_m": 6
+      }
+    },
+    "table": {
+      "unit_price": {
+        "value": 6,
+        "display": "$6.00/kg"
+      },
+      "amount": {
+        "value": 3,
+        "display": "3 kg"
+      },
+      "total": {
+        "value": 18,
+        "display": "$18.00"
+      }
+    },
+    "graph": {
+      "x_axis": {
+        "label": "weight (kg)",
+        "ticks": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "y_axis": {
+        "label": "price ($)",
+        "ticks": [
+          6,
+          12,
+          18,
+          24,
+          30
+        ]
+      },
+      "line_points": [
+        [
+          0,
+          0
+        ],
+        [
+          5,
+          30
+        ]
+      ]
+    },
+    "equation_template": "_ * _ = _",
+    "tokens": [
+      {
+        "type": "const",
+        "label": "6",
+        "value": 6
+      },
+      {
+        "type": "var",
+        "label": "p"
+      },
+      {
+        "type": "var",
+        "label": "w"
+      },
+      {
+        "type": "const",
+        "label": "2",
+        "value": 2
+      }
+    ],
+    "answers": {
+      "valid_fills": [
+        [
+          "6",
+          "w",
+          "p"
+        ],
+        [
+          "w",
+          "6",
+          "p"
+        ]
+      ],
+      "canonical_str": "p=6*w"
+    },
+    "explanation": {
+      "equation_str": "p=6×w",
+      "text": "Get price p by multiplying weight w by $6 per kg."
+    }
+  }
+]
